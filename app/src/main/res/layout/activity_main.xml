@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mycompany.testlocal.MainActivity"
+    android:id="@+id/ar_main_layout">
+
+    <fragment android:layout_width="match_parent" android:layout_height="match_parent"
+        android:id="@+id/geo_fragment" android:name="com.pikkart.ar.geo.GeoFragment" />
+
+    <LinearLayout
+        android:id="@+id/ui_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/marker_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="NO MARKER"
+            android:textSize="30sp"
+            android:visibility="visible" />
+        <Button
+            android:id="@+id/geo_enabling_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView_layout"
+            android:text="Enable Geo"
+            android:onClick="OnDisableGeo"/>
+        <Button
+            android:id="@+id/map_enabling_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView_layout"
+            android:text="Enable Map"
+            android:onClick="OnDisableMap"/>
+        <Button
+            android:id="@+id/recognition_enabling_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView_layout"
+            android:text="Enable Rec"
+            android:onClick="OnDisableRec"/>
+    </LinearLayout>
+
+</RelativeLayout>
