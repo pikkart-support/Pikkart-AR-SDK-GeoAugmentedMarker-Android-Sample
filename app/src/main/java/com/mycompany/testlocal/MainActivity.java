@@ -336,4 +336,19 @@ public class MainActivity extends AppCompatActivity implements IRecognitionListe
         LinearLayout l = (LinearLayout)findViewById(R.id.ui_layout);
         l.bringToFront();
     }
+
+    @Override
+    public void sensorsMissing(List<String> list) {
+
+    }
+
+    @Override
+    public void onCompassAccuracyChanged(int i) {
+
+    }
+
+    @Override
+    public void onMapReady(Object o) {
+
+    }
 }
